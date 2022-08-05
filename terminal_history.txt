@@ -1,25 +1,54 @@
-1  git clone https://github.com/katgaw/loan_qualifier.git
-2  code .
-3* pyenv shell 3.10.5
-4* python3 app.py
-5* pyenv activate myenv
-6* python3 app.py
-7  cd loan_qualifier
-8  ls
-9  cd ..
-10  gst
-11  cd loan_qualifier
-12  gst
-13  git commit -m "Adding saving function into app.py"
-14  git add app.py
-15  git commit -m "Adding saving function into app.py"
-16  git push
-17* pyenv shell 3.10.5
-18* pyenv activate myenv
-19* python3 app.py
-20* pyenv shell 3.10.5
-21* pyenv activate myenv
-22* python3 app.py
-23* pyenv shell 3.10.5
-24* pyenv activate myenv
-25* python3 app.py
+ 1780  cd
+ 1781  clear
+ 1782  ls
+ 1783  cd loan_qualifier
+ 1784  gst
+ 1785  history 50
+ 1786  gst
+ 1787  git add .
+ 1788  gst
+ 1789  git push
+ 1790  git cd
+ 1791  cd
+ 1792  cd loan_qualifier
+ 1793  ls
+ 1794  gst
+ 1795  git add data
+ 1796  gst
+ 1797  git rm README 2.md
+ 1798  git rm .DS_Store
+ 1799  gst
+ 1800  git add app.py
+ 1801  git commit -m "CLI: adding question where to save the .csv file"
+ 1802  git rm qualifier
+ 1803  cd
+ 1804  cd lo
+ 1805  cd loan_qualifier
+ 1806  gst
+ 1807  git rm README 2.md
+ 1808  git rm .DS_Store
+ 1809  gst
+ 1810  git add app.py
+ 1811  git commit -m "CLI: adding question where to save the .csv file"
+ 1812  git push
+ 1813  git pull origin main
+ 1814  git config pull.rebase false
+ 1815  gst
+ 1816  git pull origin main
+ 1817  cd loan_qualifier
+ 1818  gst
+ 1819  git add .
+ 1820  gst
+ 1821  git add .
+ 1822  git commit -m "qualifiers for filters and utilities for the main file"
+ 1823  git push
+ 1824  ls
+ 1825  ls -a
+ 1826  git rm -rf .DS_Store
+ 1827  git rm .DS_Store
+ 1828  gst
+ 1829  git commit -m "Delete unused .DS_Store"
+ 1830  git push
+ 1831  history 50 > terminal_history.txt
+ 1832  history 50 < terminal_history.txt
+ 1833  history 1780 < terminal_history.txt
