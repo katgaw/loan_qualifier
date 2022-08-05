@@ -109,12 +109,17 @@ def save_qualifying_loans(qualifying_loans):
     Args:
         qualifying_loans (list of lists): The qualifying bank loans.
     """
-    saving_question = questionary.text("Do you want to save the qualifying loans as a new CSV file?").ask()
-    # Set the output header
-    if saving_question.lower()=='yes':
+
+    saving_question = questionary.confirm("Do you want to save the qualifying loans as a new CSV file?").ask()
+
+    if saving_question==False:
+        print(f'I am not saving the qualifying loans as a csv file.')
+    if saving_question==True:
         print(f'I am saving the qualifying loans as a csv file.')
-        # Create a Path to a new CSV file
-        csvpath=Path("qualifying_loans.csv")
+
+        # Ask for the output path
+        csvpath = questionary.text("Enter a file path with the name of the file (.csv):").ask()
+
         print("Writing the data to a CSV file...")
         # Open the output CSV file path using `with open`
         with open(csvpath,'w',newline='') as csvfile:
@@ -124,8 +129,7 @@ def save_qualifying_loans(qualifying_loans):
         # Write the values of each dictionary as a row in the CSV file.
             for row in qualifying_loans:
                 csvwriter.writerow(row.values())
-    if saving_question.lower()=='no':
-        print(f'I am not saving the qualifying loans as a csv file.')
+    
 
 def run():
     """The main function for running the script."""

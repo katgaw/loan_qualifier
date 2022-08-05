@@ -1,0 +1,25 @@
+1  git clone https://github.com/katgaw/loan_qualifier.git
+2  code .
+3* pyenv shell 3.10.5
+4* python3 app.py
+5* pyenv activate myenv
+6* python3 app.py
+7  cd loan_qualifier
+8  ls
+9  cd ..
+10  gst
+11  cd loan_qualifier
+12  gst
+13  git commit -m "Adding saving function into app.py"
+14  git add app.py
+15  git commit -m "Adding saving function into app.py"
+16  git push
+17* pyenv shell 3.10.5
+18* pyenv activate myenv
+19* python3 app.py
+20* pyenv shell 3.10.5
+21* pyenv activate myenv
+22* python3 app.py
+23* pyenv shell 3.10.5
+24* pyenv activate myenv
+25* python3 app.py
