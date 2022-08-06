@@ -1,20 +1,3 @@
- 1780  cd
- 1781  clear
- 1782  ls
- 1783  cd loan_qualifier
- 1784  gst
- 1785  history 50
- 1786  gst
- 1787  git add .
- 1788  gst
- 1789  git push
- 1790  git cd
- 1791  cd
- 1792  cd loan_qualifier
- 1793  ls
- 1794  gst
- 1795  git add data
- 1796  gst
  1797  git rm README 2.md
  1798  git rm .DS_Store
  1799  gst
@@ -52,3 +35,18 @@
  1831  history 50 > terminal_history.txt
  1832  history 50 < terminal_history.txt
  1833  history 1780 < terminal_history.txt
+ 1834  history 1780 > terminal_history.txt
+ 1835  gst
+ 1836  git add terminal_history.txt
+ 1837  git commit -m "last 50 commands in terminal"
+ 1838  git push
+ 1839  pyenv shell 3.10.5
+ 1840  pyenv activate myenv
+ 1841  python3 app.py
+ 1842  clear
+ 1843  python3 app.py
+ 1844  clear
+ 1845  python3 app.py
+ 1846  clear
+ 1847  python3 app.py
+ 1848  history 1780
