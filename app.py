@@ -128,9 +128,8 @@ def save_qualifying_loans(qualifying_loans):
 
         # Write the values of each dictionary as a row in the CSV file.
             for row in qualifying_loans:
-                csvwriter.writerow(row.values())
+                csvwriter.writerow(row)
     
-
 def run():
     """The main function for running the script."""
 
@@ -144,7 +143,6 @@ def run():
     qualifying_loans = find_qualifying_loans(
         bank_data, credit_score, debt, income, loan_amount, home_value
     )
-
     # Save qualifying loans
     save_qualifying_loans(qualifying_loans)
 
